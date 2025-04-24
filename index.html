@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video_website_tutorial</title>
+  <!-- reset.css destyle -->
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <section class="showCase active">  <!-- ハンバーガーメニュの切り替えポイント -->
+    <header>
+      <h1>Fantatasy</h1>
+      <div class="toggle active"></div>  <!-- cssでopen,closeを切り替える -->
+    </header>
+    <video src="./img/fantasy.mp4" autoplay loop muted></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Fantasy Life</h2>
+      <h3>Explore Something New</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Deleniti dolor laudantium 
+        modi perspiciatis eaque iste!
+      </p>
+      <a href="#">Dive Into</a>
+    </div>
+    <ul class="social">
+      <li>
+        <a href="#"><img src="./img/facebook.png"></a>
+      </li>
+      <li>
+        <a href="#"><img src="./img/twitter.png"></a>
+      </li>
+      <li>
+        <a href="#"><img src="./img/instagram.png"></a>
+      </li>
+    </ul>
+  </section>
+
+  <div class="menu">
+    <ul>
+      <li><a href="#">home</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Distination</a></li>
+      <li><a href="#">Supprt</a></li>
+    </ul>
+  </div>
+  <script src="active.js"></script>
+</body>
+</html>
