@@ -1,0 +1,76 @@
+.snow-container {
+  background-image: url(./img/snowfall.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.snow-container h1 {
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  color: aliceblue;
+  opacity: 0.6;
+  font-weight: 800;
+  font-size: 100px;
+}
+ .snow {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  
+  animation: snowFall 10s linear;
+ }
+ @keyframes snowFall {
+  0% {
+    opacity: 0;
+    top: 0;
+    transform: translateX(5px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(-5px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(5px);
+  }
+  30% {
+    opacity: 1;
+    transform: translateX(-5px);
+  }
+  40% {
+    opacity: 1;
+    transform: translateX(5px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-5px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(5px);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(-5px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(5px);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(-5px);
+  }
+  100% {
+    opacity: 0;
+    top: 100vh;
+    transform: translateX(5px);
+  }
+ }
