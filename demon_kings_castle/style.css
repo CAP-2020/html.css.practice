@@ -1,0 +1,520 @@
+/* common */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #181619;
+}
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  width: 270px;
+  border: 1px solid #fff;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 100px;
+  padding: 16px;
+}
+.btn:hover{
+  color: #9375f7;
+  border: 1px solid #9578f4;
+  transition:0.2s;
+}
+@media screen and (max-width: 960px) {
+  .btn {
+    display: inline-block;
+    font-size: 18px;
+    width: 150px;
+    border: 1px solid #fff;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 100px;
+    padding: 16px;
+  }
+}
+
+
+/* header */
+header {
+  color: #fff;
+}
+header .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #ac2424; */
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 20px 0;
+}
+header .logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+header .red {
+  color: rgb(243, 45, 45);
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  margin-left: 60px;
+}
+header nav ul li a {
+  transition: .2s;
+}
+header nav ul li a:hover {
+  opacity: 0.6;
+}
+@media screen and (max-width: 960px) {
+  header .row {
+    display: block;
+  }
+  header nav ul {
+    justify-content: space-between;
+  }
+  header nav ul li {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
+/* main-visual */
+.main_visual {
+  position: relative;
+  background-image: url(./img/demons-castle.jpg);
+  background-size: cover;
+  background-position: center top;
+}
+.main_visual .title {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  z-index: 2;
+}
+.main_visual .container {
+  position: relative;
+  width: 90%;
+  height: 640px;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+.main_visual h1 {
+  font-size: 70px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.main_visual p {
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
+}
+.main_visual .purple {
+  background-color: #6f19a7;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: multiply;
+}
+
+@media screen and (max-width: 960px) {
+  .main_visual .container {
+    height: 540px;
+  }
+  .main_visual h1 {
+    font-size: 52px;
+  }
+}
+
+
+/* section1 */
+
+.section1 {
+  color: #fff;
+  padding: 80px 0;
+}
+.section1 .container { 
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+.section1 .row {
+  display: flex;
+  justify-content: space-between;
+}
+.section1 .col {
+  width: 48%;
+}
+.section1 .sub-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.section1 h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+.section1 .text {
+  font-size: 18px;
+  line-height: 1.8;
+  padding: 50px 0;
+}
+
+@media screen and (max-width: 960px) {
+  .section1 .row {
+    flex-wrap: wrap;
+  }
+  .section1 .col {
+    width: 100%;
+  }
+  .section1 h2 {
+    font-size: 24px;
+  }
+  .section1 .text {
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 30px 0 40px 0;
+  }
+}
+
+/* section2 */
+.section2 {
+  color: #fff;
+  padding: 80px 0;
+}
+.section2 .container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+.section2 .sub_title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.section2 h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.section2 .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.section2 .col {
+  position: relative;
+  width: 31%;
+  margin-right: 20px;
+}
+.section2 img {
+  border-radius: 30px;
+  border: 1px solid #4c4c4c;
+}
+.section2 h3 {
+  background-color: rgb(78, 4, 78);
+  display: inline-block;
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 20px;
+  border-radius: 10px;
+}
+.section2 .center {
+  text-align: left;
+}
+
+@media screen and (max-width:960px) {
+  .section2 .row {
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .section2 .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .section2 img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+  }
+  .section2 .center {
+    display: inline-block;
+  }
+}
+
+/* section3  */
+.section3 {
+  color: #fff;
+  padding: 80px 0;
+}
+.section3 .container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+.section3 .sub_title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.section3 h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.section3 .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section3 .col {
+  width: 48%;
+}
+.section3 .text {
+  line-height: 1.8;
+  margin-bottom: 50px;
+}
+.section3 img {
+  border-radius: 20px;
+  border: 1px solid #4c4c4c; 
+}
+@media screen and (max-width: 960px) {
+  .section3 .row {
+    flex-wrap: wrap;
+  }
+  .section3 .col {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .section3 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+/* footer */
+footer {
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+}
+footer .container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  border-top: 1px solid #7f23f0;
+  padding: 50px 0 20px;
+}
+footer .logo {
+  font-size: 20px;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+footer ul li {
+  font-size: 15px;
+  margin: 0 20px;
+}
+footer ul li a {
+  transition: .2s;
+}
+footer ul li a:hover {
+  opacity: 0.4;
+}
+
+
+
+
+
+/* 仮想ページ - 共通 */
+
+.page_main_visual {
+  position: relative;
+  background-image: url(./img/demons-castle.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.page_main_visual .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  z-index: 2;
+}
+.page_main_visual .container {
+  position: relative;
+  width: 90%;
+  height: 450px;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+.page_main_visual h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.page_main_visual p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+.page_main_visual .purple {
+  background-color: #6f19a7;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: multiply;
+}
+
+@media screen and (max-width: 960px) {
+  .page_main_visual .container {
+    height: 540px;
+  }
+  .page_main_visual h1 {
+    font-size: 52px;
+  }
+  .page_main_visual .title {
+    width: 100%;
+  }
+}
+
+/* company-page */
+
+.company_section1 {
+  color: #fff;
+  padding: 80px 0;
+}
+.company_section1 .container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+
+.company_section1 .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.company_section1 .col {
+  width: 48%;
+}
+
+.company_section1 img {
+  border-radius: 20px;
+  border: 1px solid #4c4c4c; 
+}
+.company_section1 table {
+  width: 100%;
+}
+.company_section1 table tr {
+  padding: 20px 0;
+  display: block;
+  border-bottom: 1px solid #fff;
+  line-height: 1.5;
+}
+.company_section1 table tr th{
+  width: 150px;
+}
+
+@media screen and (max-width: 960px) {
+  .company_section1 .row {
+    flex-wrap: wrap;
+  }
+  .company_section1 .col {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .company_section1 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .company_section1 table tr th{
+    width: 90px;
+  }
+}
+
+/* service-page */
+
+.service_section1 {
+  color: #fff;
+  padding: 80px 0;
+}
+.service_section1 .container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+.service_section1 .sub_title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.service_section1 h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.service_section1 .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.service_section1 .col {
+  width: 48%;
+}
+.service_section1 .text {
+  line-height: 1.8;
+  margin-bottom: 50px;
+}
+.service_section1 img {
+  border-radius: 20px;
+  border: 1px solid #4c4c4c; 
+}
+@media screen and (max-width: 960px) {
+  .service_section1 .row {
+    flex-wrap: wrap;
+  }
+  .service_section1 .col {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .service_section1 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+/* contact-page */
+
+.contact_section1 {
+  color: #fff;
+  padding: 80px 0;
+}
+.contact_section1 .container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1280px;
+}
